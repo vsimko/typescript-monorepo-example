@@ -13,6 +13,9 @@
       "clean": "rimraf packages/*/{tsconfig.tsbuildinfo,lib,dist}",
       "start:frontend": "lerna run start --stream --scope=@reico/frontend"
    },
+   "resolutions": {
+      "minimist": "^1.2.5"
+   },
    "devDependencies": {
       "lerna": "^3.20.2",
       "rimraf": "3.0.2",
