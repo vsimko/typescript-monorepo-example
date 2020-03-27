@@ -1,0 +1,16 @@
+{
+   "name": "@reico/backend",
+   "version": "1.1.1",
+   "private": true,
+   "main": "./lib/index.js",
+   "types": "./lib/index.d.ts",
+   "scripts": {
+      "dev": "node -r esm src/index.ts"
+   },
+   "dependencies": {
+      "@reico/shared": "^1.1.1"
+   },
+   "devDependencies": {
+      "esm": "^3.2.25"
+   }
+}

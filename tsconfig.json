@@ -1,0 +1,56 @@
+{
+  "exclude": [
+    "node_modules",
+    "dist",
+    "lib",
+    "__tests__",
+    "**/*.test*",
+    "**/*.spec*"
+  ],
+  "files": [],
+  // otherwise lib/ will be generated in root folder
+  "compilerOptions": {
+    "skipLibCheck": false,
+    "target": "ES2016",
+    "module": "ES6",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "rootDir": ".",
+    "outDir": "lib",
+    "downlevelIteration": true,
+    "strict": true,
+    "removeComments": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@reico/*": [
+        "packages/*/src"
+      ]
+    },
+    // Always include these settings: https://github.com/RyanCavanaugh/learn-a/#tsconfigsettingsjson
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  },
+  "references": [
+    {
+      "path": "packages/backend"
+    },
+    {
+      "path": "packages/shared"
+    },
+    {
+      "path": "packages/frontend"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+- common typescript compilation from the monorepo root directory `yarn build`

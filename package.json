@@ -1,0 +1,21 @@
+{
+   "name": "typescript-monorepo",
+   "workspaces": [
+      "packages/*"
+   ],
+   "private": true,
+   "scripts": {
+      "bumpversion": "lerna version --force-publish --no-push",
+      "prestart": "yarn build",
+      "dev": "lerna run dev --stream --parallel",
+      "build": "tsc --build --verbose",
+      "build:force": "tsc --build --force --verbose",
+      "clean": "rimraf packages/*/{tsconfig.tsbuildinfo,lib,dist}",
+      "start:frontend": "lerna run start --stream --scope=@reico/frontend"
+   },
+   "devDependencies": {
+      "lerna": "^3.20.2",
+      "rimraf": "3.0.2",
+      "typescript": "^3.8.3"
+   }
+}
