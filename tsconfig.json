@@ -2,13 +2,12 @@
   "exclude": [
     "node_modules",
     "dist",
-    "lib",
     "__tests__",
     "**/*.test*",
     "**/*.spec*"
   ],
   "files": [],
-  // otherwise lib/ will be generated in root folder
+  // otherwise dist/ will be generated in root folder
   "compilerOptions": {
     "skipLibCheck": false,
     "target": "ES2016",
@@ -18,7 +17,7 @@
       "esnext"
     ],
     "rootDir": ".",
-    "outDir": "lib",
+    "outDir": "dist",
     "downlevelIteration": true,
     "strict": true,
     "removeComments": false,
